@@ -1,0 +1,13 @@
+CREATE TABLE IF NOT EXISTS todos (
+  id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  title VARCHAR(120) NOT NULL,
+  description TEXT NOT NULL,
+  done BOOLEAN NOT NULL DEFAULT FALSE,
+  created_at DATETIME(3) NOT NULL DEFAULT (UTC_TIMESTAMP(3)),
+  updated_at DATETIME(3) NOT NULL DEFAULT (UTC_TIMESTAMP(3)),
+  PRIMARY KEY (id),
+  INDEX idx_todos_created_at (created_at, id),
+  CONSTRAINT chk_todo_title CHECK (CHAR_LENGTH(TRIM(title)) BETWEEN 1 AND 120),
+  CONSTRAINT chk_todo_description CHECK (CHAR_LENGTH(description) <= 1000)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
