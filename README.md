@@ -68,3 +68,8 @@ Visit <http://localhost:4000/api/health> to check the connection. The server che
 
 
 you can user Swagger UI: <http://localhost:4000/api-docs> check APIs
+
+
+Application demo: <https://drive.google.com/file/d/1qlwbQaovJt7AdY66KjWDuQq1MyiIkEZL/view?usp=sharing>
+
+Five-minute code walkthrough: <https://drive.google.com/file/d/1HeN3B_m3twTJVXSdBbTkMIHMpOQgpKeb/view?usp=sharing>
