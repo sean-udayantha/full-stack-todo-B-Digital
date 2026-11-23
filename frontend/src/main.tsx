@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import { Provider } from 'react-redux'
 import { CssBaseline, ThemeProvider } from '@mui/material';
 import { theme } from './app/theme';
-import './index.css'
+// import './index.css'
 import { store } from './app/store'
 import { TodosPage } from './pages/TodosPage'
 
